@@ -38,7 +38,8 @@ public class DatabaseLoader implements ApplicationRunner {
                 "Java 11",
                 "Scala",
                 "Groovy",
-                "Hibernate"
+                "Hibernate",
+                "Spring HATEOAS"
         };
         List<Course> bunchOfCourses = new ArrayList<>();
         IntStream.range(0, 100)

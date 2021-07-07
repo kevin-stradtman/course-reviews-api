@@ -1,14 +1,14 @@
 com/stradtkt/Application.java
  com.stradtkt.Application
-com/stradtkt/course/CourseRepository.java
- com.stradtkt.course.CourseRepository
-com/stradtkt/core/BaseEntity.java
- com.stradtkt.core.BaseEntity
-com/stradtkt/review/ReviewRepository.java
- com.stradtkt.review.ReviewRepository
 com/stradtkt/course/Course.java
  com.stradtkt.course.Course
-com/stradtkt/core/DatabaseLoader.java
- com.stradtkt.core.DatabaseLoader
+com/stradtkt/core/BaseEntity.java
+ com.stradtkt.core.BaseEntity
 com/stradtkt/review/Review.java
  com.stradtkt.review.Review
+com/stradtkt/review/ReviewRepository.java
+ com.stradtkt.review.ReviewRepository
+com/stradtkt/core/DatabaseLoader.java
+ com.stradtkt.core.DatabaseLoader
+com/stradtkt/course/CourseRepository.java
+ com.stradtkt.course.CourseRepository
