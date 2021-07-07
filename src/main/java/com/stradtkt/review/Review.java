@@ -1,20 +1,33 @@
 package com.stradtkt.review;
 
+import com.stradtkt.core.BaseEntity;
+import com.stradtkt.course.Course;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
-public class Review {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private final Long id;
+public class Review extends BaseEntity {
     private int rating;
     private String description;
+    @ManyToOne
+    private Course course;
 
     protected Review() {
-        id = null;
+        super();
+    }
+
+    public Review(int rating, String description) {
+        this.rating = rating;
+        this.description = description;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
     }
 
     public int getRating() {
