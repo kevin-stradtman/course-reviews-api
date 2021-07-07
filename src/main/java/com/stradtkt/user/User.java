@@ -5,6 +5,9 @@ import com.stradtkt.core.BaseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import javax.persistence.Entity;
+
+@Entity
 public class User extends BaseEntity {
     public static final PasswordEncoder PASSWORD_ENCODER = new BCryptPasswordEncoder();
     private String firstName;
@@ -68,3 +71,4 @@ public class User extends BaseEntity {
         this.roles = roles;
     }
 }
+
